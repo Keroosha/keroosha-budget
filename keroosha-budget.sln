@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Budget.WebApp", "Budget.WebApp\Budget.WebApp.fsproj", "{8001AEE4-859E-47F5-8175-BF59C0AED03B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budget.DB", "Budget.DB\Budget.DB.csproj", "{AE80D05A-D4C4-4A67-8D70-004E6345328E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8001AEE4-859E-47F5-8175-BF59C0AED03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8001AEE4-859E-47F5-8175-BF59C0AED03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8001AEE4-859E-47F5-8175-BF59C0AED03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8001AEE4-859E-47F5-8175-BF59C0AED03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE80D05A-D4C4-4A67-8D70-004E6345328E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE80D05A-D4C4-4A67-8D70-004E6345328E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE80D05A-D4C4-4A67-8D70-004E6345328E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE80D05A-D4C4-4A67-8D70-004E6345328E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
