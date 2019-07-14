@@ -1,18 +1,14 @@
-﻿// Learn more about F# at http://fsharp.org
+﻿module Budget.WebApp
 
 open System.IO
 open Budget.DB
-open Npgsql.EntityFrameworkCore.PostgreSQL
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.DependencyInjection
 open Giraffe
 open Microsoft.EntityFrameworkCore
 open Microsoft.Extensions.Configuration
-
-let webApp = choose [
-    route "/api/test" >=> text "test"
-]
+open FSharp.Control.Tasks.V2.ContextInsensitive
 
 type Startup(config : IConfiguration) =
     member __.ConfigureServices (services : IServiceCollection) =
@@ -24,8 +20,7 @@ type Startup(config : IConfiguration) =
             services.AddGiraffe() |> ignore
 
     member __.Configure (app : IApplicationBuilder) =
-        // Add Giraffe to the ASP.NET Core pipeline
-        app.UseGiraffe webApp
+        app.UseGiraffe WebAppRoute.WebAppRoutes
 
 [<EntryPoint>]
 let main argv =
