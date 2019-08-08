@@ -6,19 +6,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Route.fs" />
-        <Compile Include="Main.fs" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Giraffe" Version="3.6.0" />
+      <PackageReference Include="HotChocolate.AspNetCore" Version="10.0.0-preview.48" />
+      <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.0.0-preview.48" />
       <PackageReference Include="Microsoft.AspNetCore.App" Version="3.0.0-preview3-19153-02" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview6.19304.10" />
-      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.0.0-preview5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview7.19362.6" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.0.0-preview7" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="appsettings.json" />
+        <None Include="appsettings.json" CopyToPublishDirectory="Always" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Compile Include="Route.fs" />
+        <Compile Include="query.fs" />
+        <Compile Include="Main.fs" />
     </ItemGroup>
 
     <ItemGroup>
